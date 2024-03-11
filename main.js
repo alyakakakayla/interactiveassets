@@ -15,7 +15,7 @@ gltfLoader.load(
     './images/butterflies/scene.gltf',
     function (gltf) {
         object = gltf.scene;
-        object.position.set(-3, -.5, 0);
+        object.position.set(0, -.7, 0);
         scene.add(object);
         mixer = new THREE.AnimationMixer(object);
         const clips = gltf.animations;
@@ -41,7 +41,7 @@ document.getElementById('canvas-container').appendChild(renderer.domElement);
 
 camera.position.z = 300;
 
-const topLeftLight = new THREE.DirectionalLight(0x9cd2ff, 6); //color, intensity
+const topLeftLight = new THREE.DirectionalLight(0xFFFFFF, 6); //color, intensity
 topLeftLight.position.set(500,500,500);
 topLeftLight.castShadow = true;
 scene.add(topLeftLight);
@@ -49,7 +49,7 @@ scene.add(topLeftLight);
 const topLight = new THREE.DirectionalLight(0xFFFFFF, 5);
 scene.add(topLight);
 
-const bottomLight = new THREE.DirectionalLight(0xfcd792, 3);
+const bottomLight = new THREE.DirectionalLight(0xFFFFFF, 3);
 bottomLight.position.set(500,-500,500);
 scene.add(bottomLight);
 
