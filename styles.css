@@ -3,7 +3,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -21,7 +21,7 @@ canvas {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 10%;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -51,7 +51,7 @@ canvas {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     position: absolute;
-    margin-top: 90vh;
+    margin-top: 85vh;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -73,10 +73,11 @@ canvas {
 @media (max-width: 768px) {
     #canvas-container .credits {
         font-size: 13px;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .footer {
         font-size: 10px;
+        margin-top: 80vh;
     }
 }
