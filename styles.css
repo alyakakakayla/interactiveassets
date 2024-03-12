@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body {
@@ -24,6 +25,38 @@ canvas:hover:active {
     cursor: grab;
 }
 
+#canvas-container #hotbar {
+    z-index: 999;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    margin-top: 17vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+#canvas-container #hotbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+#canvas-container #hotbar ul li {
+    border-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 13px;
+    width:  60px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #a8a8a825;
+}
+
+#canvas-container #hotbar ul li:hover {
+    animation: highlight .5s forwards;
+    cursor: pointer;
+}
+
 #canvas-container .credits {
     z-index: 999;
     color: #ffffff;
@@ -34,11 +67,29 @@ canvas:hover:active {
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
+    width: 90vw;
 }
 
-.credits a:first-of-type {
+.credits #butterflies-credits a:first-of-type {
     color: aqua;
     font-family: 'Homemade Apple', 'Montserrat', sans-serif;
+}
+
+.credits #blackhole-credits a:first-of-type {
+    color: aqua;
+    font-size: 18px;
+    font-family: 'Mulish', 'Montserrat', monospace;
+}
+
+.credits #earth-credits a:first-of-type {
+    color: aqua;
+    font-size: 18px;
+    font-family: 'DM Serif Display', 'Montserrat', monospace;
+}
+
+.credits #gits-credits a:first-of-type {
+    color: aqua;
+    font-family: 'Kode Mono', 'Montserrat', sans-serif;
 }
 
 .credits a:first-of-type:hover {
@@ -80,6 +131,17 @@ canvas:hover:active {
     font-weight: 800;
 }
 
+@keyframes highlight {
+    0% {
+        filter: hue-rotate(0deg);
+        filter: drop-shadow(0px 0px 5px transparent);
+    }
+    100% {
+        filter: hue-rotate(-120deg);
+        filter: drop-shadow(0px 0px 8px #ffffff);
+    }
+}
+
 @media (max-width: 768px) {
     #canvas-container .credits {
         font-size: 13px;
@@ -89,4 +151,49 @@ canvas:hover:active {
         font-size: 10px;
         margin-top: 80vh;
     }
+
+    #canvas-container #hotbar {
+        margin-top: 18vh;
+    }
+
+    #canvas-container #hotbar ul li {
+        border-radius: 10px;
+        font-size: 10px;
+        width: 40px;
+        padding: 6px;
+        margin: 12px;
+    }
+
+    #canvas-container #hotbar ul li img {
+        width: 30px;
+    }
+
+    .credits #blackhole-credits a:first-of-type {
+        color: aqua;
+        font-size: 15px;
+        font-family: 'Mulish', 'Montserrat', monospace;
+    }
+
+    .credits #earth-credits a:first-of-type {
+        color: aqua;
+        font-size: 15px;
+        font-family: 'DM Serif Display', 'Montserrat', monospace;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #a8a8a825;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
 }
