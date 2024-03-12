@@ -186,13 +186,13 @@ canvas:hover:active {
 
     .credits #blackhole-credits a:first-of-type {
         color: aqua;
-        font-size: 15px;
+        font-size: 11px;
         font-family: 'Mulish', 'Montserrat', monospace;
     }
 
     .credits #earth-credits a:first-of-type {
         color: aqua;
-        font-size: 15px;
+        font-size: 12px;
         font-family: 'DM Serif Display', 'Montserrat', monospace;
     }
 }
