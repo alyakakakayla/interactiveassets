@@ -21,7 +21,7 @@ canvas {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     position: absolute;
-    margin-top: 10%;
+    margin-top: 10vh;
     left: 50%;
     transform: translate(-50%, 0);
     text-align: center;
@@ -29,6 +29,7 @@ canvas {
 
 .credits a:first-of-type {
     color: aqua;
+    font-family: 'Homemade Apple', 'Montserrat', sans-serif;
 }
 
 .credits a:first-of-type:hover {
@@ -73,7 +74,6 @@ canvas {
 @media (max-width: 768px) {
     #canvas-container .credits {
         font-size: 13px;
-        margin-top: 15%;
     }
 
     .footer {
