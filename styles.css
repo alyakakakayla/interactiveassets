@@ -144,7 +144,7 @@ canvas:hover:active {
 
 @media (max-width: 768px) {
     #canvas-container .credits {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .footer {
@@ -153,13 +153,13 @@ canvas:hover:active {
     }
 
     #canvas-container #hotbar {
-        margin-top: 18vh;
+        margin-top: 20vh;
     }
 
     #canvas-container #hotbar ul li {
         border-radius: 10px;
         font-size: 10px;
-        width: 40px;
+        width: 35px;
         padding: 6px;
         margin: 12px;
     }
