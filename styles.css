@@ -15,6 +15,15 @@ canvas {
     width: 100vw;
 }
 
+canvas:hover {
+    cursor: pointer;
+}
+
+canvas:hover:active {
+    cursor: move;
+    cursor: grab;
+}
+
 #canvas-container .credits {
     z-index: 999;
     color: #ffffff;
