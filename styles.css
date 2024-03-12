@@ -70,6 +70,22 @@ canvas:hover:active {
     width: 90vw;
 }
 
+.credits #butterflies-credits {
+    display: none;
+}
+
+.credits #blackhole-credits {
+    display: none;
+}
+
+.credits #earth-credits {
+    display: none;
+}
+
+.credits #gits-credits {
+    display: none;
+}
+
 .credits #butterflies-credits a:first-of-type {
     color: aqua;
     font-family: 'Homemade Apple', 'Montserrat', sans-serif;
