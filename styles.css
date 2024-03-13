@@ -13,13 +13,10 @@ body {
 
 @keyframes colorChange {
     0% {
-        color: aqua;
+        color: rgb(36, 220, 220);
     }
     25% {
-        color: aqua;
-    }
-    50% {
-        color: #ffffff;
+        color: rgb(36, 220, 220);
     }
     75% {
         color: orange;
@@ -31,35 +28,34 @@ body {
 
 @keyframes fadeOut {
     0% {
-        opacity: 1;
+        height: 100vh;
     }
     25% {
-        opacity: 1;
+        height: 100vh;
     }
     50% {
-        opacity: 1;
+        height: 100vh;
     }
     75% {
-        opacity: 1;
+        height: 100vh;
     }
     100% {
-        opacity: 0;
-        display: none;
         height: 0;
+        display: none;
     }
 }
 
 #start-screen {
     height: 100vh;
     width: 100vw;
-    background-color: #000000;
+    background-color: #ffffff;
     position: absolute;
     z-index: 1000;
     animation: fadeOut 5s forwards;
 }
 
 #start-screen h1 {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     position: absolute;
