@@ -15,13 +15,18 @@ let mouseY = window.innerHeight/2;
 let object;
 let selectedObject = "butterflies";
 let controls;
-const gltfLoader = new GLTFLoader();
+const loadingManager = new THREE.LoadingManager();
+const gltfLoader = new GLTFLoader(loadingManager);
 let mixer;
+const progressBar = document.getElementById('progress-bar');
+const progressBarContainer = document.querySelector(".progress-bar-container");
 
 document.getElementById("butterflies-button").addEventListener("click", loadButterflies);
 document.getElementById("blackhole-button").addEventListener("click", loadBlackhole);
 document.getElementById("earth-button").addEventListener("click", loadEarth);
 document.getElementById("gits-button").addEventListener("click", loadGits);
+progressBarContainer.style.display="none";
+
 
 function loadButterflies() {
     document.getElementById('first-message').style.display="none";
@@ -35,6 +40,15 @@ function loadButterflies() {
     }
 
     selectedObject = "butterflies";
+
+    loadingManager.onProgress = function(url, loaded, total) {
+        progressBarContainer.style.display="block";
+        progressBar.value = (loaded / total)*100;
+    }
+
+    loadingManager.onLoad = function() {
+        progressBarContainer.style.display="none";
+    }
 
     gltfLoader.load(
         `./images/${selectedObject}/scene.gltf`,
@@ -87,6 +101,15 @@ function loadBlackhole() {
     }
 
     selectedObject = "blackhole";
+
+    loadingManager.onProgress = function(url, loaded, total) {
+        progressBarContainer.style.display="block";
+        progressBar.value = (loaded / total)*100;
+    }
+
+    loadingManager.onLoad = function() {
+        progressBarContainer.style.display="none";
+    }
 
     gltfLoader.load(
         `./images/${selectedObject}/scene.gltf`,
@@ -142,6 +165,15 @@ function loadEarth() {
     
     selectedObject = "earth";
 
+    loadingManager.onProgress = function(url, loaded, total) {
+        progressBarContainer.style.display="block";
+        progressBar.value = (loaded / total)*100;
+    }
+
+    loadingManager.onLoad = function() {
+        progressBarContainer.style.display="none";
+    }
+
     gltfLoader.load(
         `./images/${selectedObject}/scene.gltf`,
         function (gltf) {
@@ -187,6 +219,15 @@ function loadGits() {
     }
 
     selectedObject = "gits";
+
+    loadingManager.onProgress = function(url, loaded, total) {
+        progressBarContainer.style.display="block";
+        progressBar.value = (loaded / total)*100;
+    }
+
+    loadingManager.onLoad = function() {
+        progressBarContainer.style.display="none";
+    }
 
     gltfLoader.load(
         `./images/${selectedObject}/scene.gltf`,

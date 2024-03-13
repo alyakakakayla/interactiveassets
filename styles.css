@@ -131,6 +131,18 @@ canvas:hover:active {
     cursor: pointer;
 }
 
+.progress-bar-container #progress-bar {
+    z-index: 999;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 80vw;
+}
+
+
 /*
 #canvas-container #interact #options-button {
     margin: 15px;
