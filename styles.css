@@ -149,24 +149,22 @@ canvas:hover:active {
 
 .credits #butterflies-credits a:first-of-type {
     color: aqua;
-    font-family: 'Homemade Apple', 'Montserrat', sans-serif;
+    /*font-family: 'Homemade Apple', 'Montserrat', sans-serif;*/
 }
 
 .credits #blackhole-credits a:first-of-type {
     color: aqua;
-    font-size: 18px;
-    font-family: 'Mulish', 'Montserrat', monospace;
+    /*font-family: 'Mulish', 'Montserrat', monospace;*/
 }
 
 .credits #earth-credits a:first-of-type {
     color: aqua;
-    font-size: 18px;
-    font-family: 'DM Serif Display', 'Montserrat', monospace;
+    /*font-family: 'DM Serif Display', 'Montserrat', monospace;*/
 }
 
 .credits #gits-credits a:first-of-type {
     color: aqua;
-    font-family: 'Kode Mono', 'Montserrat', sans-serif;
+    /*font-family: 'Kode Mono', 'Montserrat', sans-serif;*/
 }
 
 .credits a:first-of-type:hover {
@@ -247,18 +245,6 @@ canvas:hover:active {
 
     #canvas-container #hotbar ul li img {
         width: 30px;
-    }
-
-    .credits #blackhole-credits a:first-of-type {
-        color: aqua;
-        font-size: 11px;
-        font-family: 'Mulish', 'Montserrat', monospace;
-    }
-
-    .credits #earth-credits a:first-of-type {
-        color: aqua;
-        font-size: 12px;
-        font-family: 'DM Serif Display', 'Montserrat', monospace;
     }
 }
 
