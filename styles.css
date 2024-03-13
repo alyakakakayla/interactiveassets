@@ -58,6 +58,7 @@ body {
 }
 
 #start-screen #start-title {
+    width: 70vw;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -70,6 +71,7 @@ body {
 }
 
 #start-screen #start-subtitle {
+    width: 70vw;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -141,7 +143,6 @@ canvas:hover:active {
     text-align: center;
     width: 80vw;
 }
-
 
 /*
 #canvas-container #interact #options-button {
