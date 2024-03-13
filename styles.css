@@ -13,10 +13,13 @@ body {
 
 @keyframes colorChange {
     0% {
-        color: rgb(36, 220, 220);
+        color: #24dcdc;
     }
     25% {
-        color: rgb(36, 220, 220);
+        color: #24dcdc;
+    }
+    50% {
+        color: #ffffff;
     }
     75% {
         color: orange;
@@ -66,7 +69,7 @@ body {
 }
 
 #start-screen #start-title {
-    animation: colorChange 5s infinite alternate;
+    animation: colorChange 4s infinite alternate;
 }
 
 canvas {
@@ -227,7 +230,7 @@ canvas:hover:active {
 
     .footer {
         font-size: 10px;
-        margin-top: 80vh;
+        margin-top: 85vh;
     }
 
     #canvas-container #hotbar {
