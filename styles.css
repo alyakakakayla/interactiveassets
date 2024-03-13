@@ -261,8 +261,9 @@ canvas:hover:active {
 }
 
 @media (max-width: 768px) {
-    #start-screen h1 {
+    #start-screen #start-title {
         margin-top: 40vh;
+        font-size: 25px;
     }
 
     #canvas-container .credits {
