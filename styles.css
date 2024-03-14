@@ -134,7 +134,7 @@ canvas:hover:active {
 }
 
 .progress-bar-container #progress-bar {
-    z-index: 999;
+    z-index: 998;
     color: #ffffff;
     position: absolute;
     top: 50%;
@@ -142,7 +142,6 @@ canvas:hover:active {
     transform: translate(-50%, 0);
     text-align: center;
     width: 80vw;
-    display: none;
 }
 
 /*

@@ -25,7 +25,7 @@ document.getElementById("butterflies-button").addEventListener("click", loadButt
 document.getElementById("blackhole-button").addEventListener("click", loadBlackhole);
 document.getElementById("earth-button").addEventListener("click", loadEarth);
 document.getElementById("gits-button").addEventListener("click", loadGits);
-progressBarContainer.style.display="none";
+progressBarContainer.style.display="none"; 
 
 
 function loadButterflies() {
